@@ -42,11 +42,11 @@
           <p>Area (A) =0.5 X B X h </p>
           <div class="flex items-center gap-4">
               <div class="flex items-center gap-3">
-                <input id="tri-input-b" class="border w-20 rounded bg-gray-100  p-2" type="text" placeholder="b">
+                <input id="tri-input-b" class="border w-20 rounded bg-gray-100  px-2" type="text" placeholder="b">
                 <p>cm</p>
               </div>
               <div class="flex items-center gap-3">
-                <input id="tri-input-h" class="border w-20 rounded bg-gray-100  p-2" type="text" placeholder="h">
+                <input id="tri-input-h" class="border w-20 rounded bg-gray-100  px-2" type="text" placeholder="h">
                 <p>cm</p>
               </div>
           </div>
@@ -58,11 +58,11 @@
           <p>Area (A) = W X I</p>
           <div class="flex items-center gap-4">
               <div class="flex items-center gap-3">
-                <input id="rec-input-w" class="border w-20 rounded bg-gray-100  p-2" type="text" placeholder="w">
+                <input id="rec-input-w" class="border w-20 rounded bg-gray-100  px-2" type="text" placeholder="w">
                 <p>cm</p>
               </div>
               <div class="flex items-center gap-3">
-                <input id="rec-input-i" class="border w-20 rounded bg-gray-100  p-2" type="text" placeholder="I">
+                <input id="rec-input-i" class="border w-20 rounded bg-gray-100  px-2" type="text" placeholder="I">
                 <p>cm</p>
               </div>
           </div>
@@ -74,11 +74,11 @@
           <p>Area (A) =B X h </p>
           <div class="flex items-center gap-4">
               <div class="flex items-center gap-3">
-                <input id="para-input-b" class="border w-20 rounded bg-gray-100 p-2" type="text" placeholder="b">
+                <input id="para-input-b" class="border w-20 rounded bg-gray-100 px-2" type="text" placeholder="b">
                 <p>cm</p>
               </div>
               <div class="flex items-center gap-3">
-                <input id="para-input-h" class="border w-20 rounded bg-gray-100  p-2" type="text" placeholder="h">
+                <input id="para-input-h" class="border w-20 rounded bg-gray-100  px-2" type="text" placeholder="h">
                 <p>cm</p>
               </div>
           </div>
@@ -86,8 +86,11 @@
         </div>
         <div class="border-2 rounded-lg p-8">
           <h3 class="text-xl font-semibold text-center">Area Calculation</h3>
-          <p class="text-lg font-semibold">Area:</p>
-          <p id="area-cal"></p>
+          <div class="flex items-center">
+            <p class="text-lg font-semibold">Area:</p>
+            <p id="area-cal"></p>
+            <p>cm <sup>2</sup> </p>
+          </div>
         </div>
         <div class="grid grid-cols-1 justify-items-center  border-2 rounded-lg p-8">
           <img src="./images/rhombus.png" alt="">
@@ -95,11 +98,11 @@
           <p>Area (A) =0.5 X d<sub>1</sub> X  d<sub>2</sub> </p>
           <div class="flex items-center gap-4">
               <div class="flex items-center gap-3">
-                <input id="rhom-input-d1" class="border w-20 rounded bg-gray-100  p-2" type="text" placeholder="b">
+                <input id="rhom-input-d1" class="border w-20 rounded bg-gray-100  px-2" type="text" placeholder="b">
                 <p>cm</p>
               </div>
               <div class="flex items-center gap-3">
-                <input id="rhom-input-d2" class="border w-20 rounded bg-gray-100  p-2" type="text" placeholder="h">
+                <input id="rhom-input-d2" class="border w-20 rounded bg-gray-100  px-2" type="text" placeholder="h">
                 <p>cm</p>
               </div>
           </div>
@@ -111,23 +114,23 @@
           <p>Area (A) =1.72 X a <sup>2</sup> </p>
           <div class="flex items-center gap-4">
               <div class="flex items-center gap-3">
-                <input id="penta-input" class="border w-20 rounded bg-gray-100  p-2" type="text" placeholder="a">
+                <input id="penta-input" class="border w-20 rounded bg-gray-100  px-2" type="text" placeholder="a">
                 <p>cm</p>
               </div>
           </div>
           <button id="penta-btn" class="rounded-lg w-full px-3 py-1 bg-blue-500 text-white mt-3">Calculate</button>
         </div>
-        <div class="grid grid-cols-1 justify-items-center  border-2 rounded-lg p-8">
+        <div class="grid grid-cols-1 justify-items-center  border-2 rounded-lg px-8">
           <img src="./images/ellipse.png" alt="">
           <h3 class="text-xl font-semibold">Ellipse</h3>
           <p>Area (A) =3.1416 X ab  </p>
           <div class="flex items-center gap-4">
               <div class="flex items-center gap-3">
-                <input id="elli-input-a" class="border w-20 rounded bg-gray-100  p-2" type="text" placeholder="a">
+                <input id="elli-input-a" class="border w-20 rounded bg-gray-100  px-2" type="text" placeholder="a">
                 <p>cm</p>
               </div>
               <div class="flex items-center gap-3">
-                <input id="elli-input-b" class="border w-20 rounded bg-gray-100  p-2" type="text" placeholder="b">
+                <input id="elli-input-b" class="border w-20 rounded bg-gray-100  px-2" type="text" placeholder="b">
                 <p>cm</p>
               </div>
           </div>
