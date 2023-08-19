@@ -62,3 +62,12 @@ document.getElementById("elli-btn").addEventListener("click", function () {
   const areaCal = document.getElementById("area-cal");
   areaCal.innerText = result;
 });
+
+/* convertion secton start  */
+document.getElementById("covertion-btn").addEventListener("click", function () {
+  const previousResult = document.getElementById("area-cal");
+  const previousResultString = previousResult.innerText;
+  const Result = parseFloat(previousResultString);
+  const newResult = Result / 10000;
+  previousResult.innerText = newResult;
+});
