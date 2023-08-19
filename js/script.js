@@ -42,3 +42,12 @@ document.getElementById("rhom-btn").addEventListener("click", function () {
   const areaCal = document.getElementById("area-cal");
   areaCal.innerText = result;
 });
+
+/* Pentagon  section start  */
+document.getElementById("penta-btn").addEventListener("click", function () {
+  const inputPenta = document.getElementById("penta-input").value;
+  const newPenta = parseFloat(inputPenta);
+  const result = 1.72 * inputPenta * inputPenta;
+  const areaCal = document.getElementById("area-cal");
+  areaCal.innerText = result;
+});
