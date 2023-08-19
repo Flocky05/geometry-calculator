@@ -19,3 +19,15 @@ document.getElementById("rec-btn").addEventListener("click", function () {
   const areaCal = document.getElementById("area-cal");
   areaCal.innerText = result;
 });
+
+/* Parallelogram section start */
+
+document.getElementById("para-btn").addEventListener("click", function () {
+  const inputParaB = document.getElementById("para-input-b").value;
+  const updateInputparaB = parseFloat(inputParaB);
+  const inputParaH = document.getElementById("para-input-h").value;
+  const updateInputparaH = parseFloat(inputParaH);
+  const result = updateInputparaB * updateInputparaH;
+  const areaCal = document.getElementById("area-cal");
+  areaCal.innerText = result;
+});
