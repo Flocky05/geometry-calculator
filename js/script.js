@@ -8,3 +8,14 @@ document.getElementById("tri-btn").addEventListener("click", function () {
   const areaCal = document.getElementById("area-cal");
   areaCal.innerText = result;
 });
+
+/* Rectangle section start  */
+document.getElementById("rec-btn").addEventListener("click", function () {
+  const inputRecW = document.getElementById("rec-input-w").value;
+  const inputRecWString = parseFloat(inputRecW);
+  const inputRecI = document.getElementById("rec-input-i").value;
+  const inputRecIString = parseFloat(inputRecI);
+  const result = inputRecWString * inputRecIString;
+  const areaCal = document.getElementById("area-cal");
+  areaCal.innerText = result;
+});
