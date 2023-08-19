@@ -6,7 +6,7 @@ document.getElementById("tri-btn").addEventListener("click", function () {
   const inputFieldStringH = parseFloat(inputFieldH);
   const result = 0.5 * inputFieldStringB * inputFieldStringH;
   const areaCal = document.getElementById("area-cal");
-  areaCal.innerText = result;
+  areaCal.innerText = result + `cm²`;
 });
 
 /* Rectangle section start  */
@@ -17,7 +17,7 @@ document.getElementById("rec-btn").addEventListener("click", function () {
   const inputRecIString = parseFloat(inputRecI);
   const result = inputRecWString * inputRecIString;
   const areaCal = document.getElementById("area-cal");
-  areaCal.innerText = result;
+  areaCal.innerText = result + `cm²`;
 });
 
 /* Parallelogram section start */
@@ -29,7 +29,7 @@ document.getElementById("para-btn").addEventListener("click", function () {
   const updateInputparaH = parseFloat(inputParaH);
   const result = updateInputparaB * updateInputparaH;
   const areaCal = document.getElementById("area-cal");
-  areaCal.innerText = result;
+  areaCal.innerText = result + `cm²`;
 });
 
 /* Rhombus section start */
@@ -40,7 +40,7 @@ document.getElementById("rhom-btn").addEventListener("click", function () {
   const updateInputRhomD2 = parseFloat(inputRhomD2);
   const result = 0.5 * updateInputRhomD1 * updateInputRhomD2;
   const areaCal = document.getElementById("area-cal");
-  areaCal.innerText = result;
+  areaCal.innerText = result + `cm²`;
 });
 
 /* Pentagon  section start  */
@@ -49,7 +49,7 @@ document.getElementById("penta-btn").addEventListener("click", function () {
   const newPenta = parseFloat(inputPenta);
   const result = 1.72 * inputPenta * inputPenta;
   const areaCal = document.getElementById("area-cal");
-  areaCal.innerText = result;
+  areaCal.innerText = result + `cm²`;
 });
 
 /* Ellipse section start  */
@@ -60,7 +60,7 @@ document.getElementById("elli-btn").addEventListener("click", function () {
   const NumberElliB = parseFloat(inputElliB);
   const result = 3.1416 * NumberElliA * NumberElliB;
   const areaCal = document.getElementById("area-cal");
-  areaCal.innerText = result;
+  areaCal.innerText = result + `cm²`;
 });
 
 /* convertion secton start  */
@@ -69,5 +69,6 @@ document.getElementById("covertion-btn").addEventListener("click", function () {
   const previousResultString = previousResult.innerText;
   const Result = parseFloat(previousResultString);
   const newResult = Result / 10000;
-  previousResult.innerText = newResult;
+  const newResultSymbol = newResult + `m²`;
+  previousResult.innerText = newResultSymbol;
 });
