@@ -51,3 +51,14 @@ document.getElementById("penta-btn").addEventListener("click", function () {
   const areaCal = document.getElementById("area-cal");
   areaCal.innerText = result;
 });
+
+/* Ellipse section start  */
+document.getElementById("elli-btn").addEventListener("click", function () {
+  const inputElliA = document.getElementById("elli-input-a").value;
+  const NumberElliA = parseFloat(inputElliA);
+  const inputElliB = document.getElementById("elli-input-b").value;
+  const NumberElliB = parseFloat(inputElliB);
+  const result = 3.1416 * NumberElliA * NumberElliB;
+  const areaCal = document.getElementById("area-cal");
+  areaCal.innerText = result;
+});
