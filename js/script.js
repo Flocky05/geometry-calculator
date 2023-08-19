@@ -31,3 +31,14 @@ document.getElementById("para-btn").addEventListener("click", function () {
   const areaCal = document.getElementById("area-cal");
   areaCal.innerText = result;
 });
+
+/* Rhombus section start */
+document.getElementById("rhom-btn").addEventListener("click", function () {
+  const inputRhomD1 = document.getElementById("rhom-input-d1").value;
+  const updateInputRhomD1 = parseFloat(inputRhomD1);
+  const inputRhomD2 = document.getElementById("rhom-input-d2").value;
+  const updateInputRhomD2 = parseFloat(inputRhomD2);
+  const result = 0.5 * updateInputRhomD1 * updateInputRhomD2;
+  const areaCal = document.getElementById("area-cal");
+  areaCal.innerText = result;
+});
